@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { OrbitingLoader } from '@/ui/Loader'
-import { TextTicker } from './PreviewCode/Text'
+import { TextTicker } from './PreviewCode/TextTicker'
 
 const data = [
   {
@@ -25,9 +25,9 @@ const data = [
   },
   {
     id: 2,
-    title: 'Text',
+    title: 'Text Ticker',
     component: <TextTicker />,
-    link: '/docs/components/text',
+    link: '/docs/components/text-ticker',
   },
   {
     id: 4,

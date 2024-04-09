@@ -266,8 +266,8 @@ export const navigation: Array<NavGroup> = [
         href: '/docs/components/tabs',
       },
       {
-        title: 'Text',
-        href: '/docs/components/text',
+        title: 'Text Ticker',
+        href: '/docs/components/text-ticker',
       },
     ],
   },
