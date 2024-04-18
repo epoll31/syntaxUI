@@ -6,7 +6,6 @@ Free-to-use UI elements designed for rapid development.
 
 ### Sponsors
 
-
 <!--sponsors start-->
 <td align="center" valign="top">
         <a href="https://vercel.com" target="_blank">
@@ -14,13 +13,13 @@ Free-to-use UI elements designed for rapid development.
         </a><br />
         <div>Vercel</div>
       </td>
-      
 
 ## Contributing
 
 Please read the [contributing guide](/CONTRIBUTING.md).
 
 ## Credits
+
 Branding - [Amjad](https://twitter.com/amjaddsn/)
 
 ## License
