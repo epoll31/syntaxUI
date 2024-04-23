@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { ThreeDButton } from '@/ui/button'
 import HeartbeatButton from '@/ui/animation/HeartbeatButton'
@@ -8,19 +10,19 @@ const data = [
     id: 1,
     title: '3D Button',
     link: '/docs/components/button/3d-button',
-    component: <ThreeDButton />,
+    component: <ThreeDButton onClick={(e) => e.preventDefault()} />,
   },
   {
     id: 2,
     title: 'Neubrutalism Button',
     link: '/docs/components/button/neubrutalism-button',
-    component: <NeubrutalismButton />,
+    component: <NeubrutalismButton onClick={(e) => e.preventDefault()} />,
   },
   {
     id: 2,
     title: 'Heartbeat Button',
     link: '/docs/components/button/heartbeat-button',
-    component: <HeartbeatButton />,
+    component: <HeartbeatButton onClick={(e) => e.preventDefault()} />,
   },
 ]
 
