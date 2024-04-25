@@ -190,6 +190,104 @@ export default {
             opacity: '1',
           },
         },
+        // rotate: {
+        //   '0%': {
+        //     transform: 'rotate(0deg)',
+        //   },
+        //   '100%': {
+        //     transform: 'rotate(360deg)',
+        //   },
+        // },
+        'move-border': {
+          // '25%': {
+          //   top: '0',
+          //   left: '100%',
+          // },
+          // '50%': {
+          //   top: '100%',
+          //   left: '100%',
+          // },
+          // '75%': {
+          //   top: '100%',
+          //   left: '0',
+          // },
+          // '100%': {
+          //   top: '0',
+          //   left: '0',
+          // },
+          '0%': {
+            transform: 'translate(-50%, -50%)',
+            backgroundPosition: '0% 0%',
+          },
+          '25%': {
+            transform: 'translate(-150%, -50%)',
+            backgroundPosition: '100% 0%',
+          },
+          '50%': {
+            transform: 'translate(-150%, -150%)',
+            backgroundPosition: '100% 100%',
+          },
+          '75%': {
+            transform: 'translate(-50%, -150%)',
+            backgroundPosition: '0% 100%',
+          },
+          '100%': {
+            transform: 'translate(-50%, -50%)',
+            backgroundPosition: '0% 0%',
+          },
+        },
+        // 'better-spin': {
+        //   '0%': {
+        //     background:
+        //       'conic-gradient(from 0deg at 50% 50%, #fb3a5d 50%, #ffffff 98%, #fb3a5d 100%)',
+        //   },
+        //   '100%': {
+        //     background:
+        //       'conic-gradient(from 180deg at 50% 50%, #fb3a5d 50%, #ffffff 98%, #fb3a5d 100%)',
+        //   },
+        // },
+        spin0: {
+          '0%': {
+            '--angle': '0deg',
+            '--x': '30px',
+          },
+          '50%': {
+            '--angle': '180deg',
+            '--x': '-30px',
+          },
+          '100%': {
+            '--angle': '360deg',
+            '--x': '30px',
+          },
+        },
+        spin1: {
+          '0%': {
+            '--angle': '0deg',
+          },
+          '50%': {
+            '--angle': '180deg',
+          },
+          '100%': {
+            '--angle': '360deg',
+          },
+        },
+        spin2: {
+          '0%': {
+            '--x': '25px',
+          },
+          // '40%': {
+          //   '--x': '-30px',
+          // },
+          '50%': {
+            '--x': '-25px',
+          },
+          // '60%': {
+          //   '--x': '-30px',
+          // },
+          '100%': {
+            '--x': '25px',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -201,6 +299,9 @@ export default {
         'tag-input-scale-in': 'tag-input-scale-in 0.3s ease-in-out forwards',
         'hover-pop': 'hover-pop 0.5s ease-out',
         'hover-vibrate': 'hover-vibrate 0.4s ease-in-out',
+        'spin-slow': 'spin 3s linear infinite',
+        'move-border': 'move-border 3s infinite linear',
+        spin: 'spin1 4s linear infinite, spin2 4s 0.5s ease-in-out infinite',
       },
     },
   },

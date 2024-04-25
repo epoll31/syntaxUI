@@ -3,6 +3,7 @@ import { ThreeDButton } from '@/ui/button'
 import HeartbeatButton from '@/ui/animation/HeartbeatButton'
 import NeubrutalismButton from '../../showcase/components/button/NeubrutalismButton'
 import StitchesButton from '@/components/CodePreview/stitches-button'
+import LineEffectButton from '@/showcase/components/button/LineEffectButton'
 
 const data = [
   {
@@ -28,6 +29,12 @@ const data = [
     title: 'Stitches Button',
     link: '/docs/components/button/stitches-button',
     component: <StitchesButton />,
+  },
+  {
+    id: 5,
+    title: 'Line Effect Button',
+    link: '',
+    component: <LineEffectButton />,
   },
 ]
 
