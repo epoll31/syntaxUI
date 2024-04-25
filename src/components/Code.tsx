@@ -60,7 +60,7 @@ function ClipboardIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function CopyButton({ code }: { code: string }) {
+export function CopyButton({ code }: { code: string }) {
   let [copyCount, setCopyCount] = useState(0)
   let copied = copyCount > 0
 
@@ -111,7 +111,13 @@ function CopyButton({ code }: { code: string }) {
   )
 }
 
-function CodePanelHeader({ tag, label }: { tag?: string; label?: string }) {
+export function CodePanelHeader({
+  tag,
+  label,
+}: {
+  tag?: string
+  label?: string
+}) {
   if (!tag && !label) {
     return null
   }
@@ -133,7 +139,7 @@ function CodePanelHeader({ tag, label }: { tag?: string; label?: string }) {
   )
 }
 
-function CodePanel({
+export function CodePanel({
   children,
   tag,
   label,
