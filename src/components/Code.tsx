@@ -321,6 +321,7 @@ export function CodeGroup({
 }: React.ComponentPropsWithoutRef<typeof CodeGroupPanels> & { title: string }) {
   const [isExpanded, setIsExpanded] = useState(false)
 
+  // console.log('CodeGroup', children)
   let languages =
     Children.map(children, (child) =>
       getPanelTitle(isValidElement(child) ? child.props : {}),
@@ -328,8 +329,8 @@ export function CodeGroup({
   let tabGroupProps = useTabGroupProps(languages)
   let hasTabs = Children.count(children) > 1
 
-  let containerClassName = `my-6 rounded-2xl  ${
-    isExpanded ? '' : 'max-h-[300px]  h-full overflow-hidden'
+  let containerClassName = `my-6 rounded-2xl ${
+    isExpanded ? '' : 'max-h-[300px] h-full overflow-hidden'
   } bg-zinc-900 shadow-md dark:ring-1 dark:ring-white/10`
   let header = (
     <CodeGroupHeader title={title} selectedIndex={tabGroupProps.selectedIndex}>
@@ -379,6 +380,8 @@ export function Code({
         '`Code` children must be a string when nested inside a `CodeGroup`.',
       )
     }
+
+    // console.log('code', props)
     return <code {...props} dangerouslySetInnerHTML={{ __html: children }} />
   }
 

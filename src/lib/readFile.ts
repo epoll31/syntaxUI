@@ -1,7 +1,7 @@
-"use server";
+'use server'
 
-import { promises as fs } from "fs";
+import { promises as fs } from 'fs'
 
 export async function readFile(path: string) {
-  return await fs.readFile(path, "utf-8");
+  return await fs.readFile(process.cwd() + '/src' + path, 'utf-8')
 }
