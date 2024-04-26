@@ -1,10 +1,13 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import OrbitingLoader from '@/showcase/components/loaders/OrbitingLoader'
-import { TextTicker } from './PreviewCode/Text'
-import ThreeDButton from '@/showcase/components/button/ThreeDButton'
-import SimpleToggle from '@/showcase/components/toggle/SimpleToggle'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import OrbitingLoader from '@/showcase/components/loaders/OrbitingLoader';
+import { TextTicker } from './PreviewCode/Text';
+import ThreeDButton from '@/showcase/components/button/ThreeDButton';
+import SimpleToggle from '@/showcase/components/toggle/SimpleToggle';
+import SimpleCard, {
+  SimpleCardExample,
+} from '@/showcase/components/cards/SimpleCard';
 
 const data = [
   {
@@ -73,7 +76,17 @@ const data = [
     component: <SimpleToggle />,
     link: '/docs/components/toggle',
   },
-]
+  {
+    id: 11,
+    title: 'Cards',
+    component: (
+      <SimpleCard>
+        <div className="text-2xl font-semibold">Simple Card</div>
+      </SimpleCard>
+    ),
+    link: '/docs/components/cards',
+  },
+];
 
 const ComponentCards = () => {
   return (
@@ -103,7 +116,7 @@ const ComponentCards = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ComponentCards
+export default ComponentCards;
