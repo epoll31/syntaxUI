@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { Heading } from '@/components/Heading'
 import { Prose } from '@/components/Prose'
+import { cn } from '@/lib/utils'
 
 export const a = Link
 export { Button } from '@/components/ui/button'
@@ -123,9 +124,20 @@ export function Property({
   )
 }
 
-export function Preview({ children }: { children: React.ReactNode }) {
+export function Preview({
+  children,
+  className,
+}: {
+  children: React.ReactNode
+  className?: string
+}) {
   return (
-    <div className="group inline-flex w-full items-center justify-center gap-3 rounded-lg border py-8">
+    <div
+      className={cn(
+        'group inline-flex w-full items-center justify-center gap-3 overflow-hidden rounded-lg border py-8',
+        className,
+      )}
+    >
       {children}
     </div>
   )
