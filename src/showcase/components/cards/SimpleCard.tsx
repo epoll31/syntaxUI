@@ -1,22 +1,19 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/lib/utils'
+import { HTMLProps, PropsWithChildren } from 'react'
 
 export default function SimpleCard({
-  children,
   className,
-}: {
-  children?: React.ReactNode;
-  className?: string;
-}) {
+  ...props
+}: HTMLProps<HTMLDivElement>) {
   return (
     <div
       className={cn(
         'flex flex-col justify-between gap-6 rounded-lg border bg-white p-6',
         className,
       )}
-    >
-      {children}
-    </div>
-  );
+      {...props}
+    />
+  )
 }
 
 export function SimpleCardExample() {
@@ -28,7 +25,6 @@ export function SimpleCardExample() {
         lectus. Set sit amet ipsum mauris. Maecenas congue ligula ac quam
         viverra nec consectetur ante hendrerit. Donec et mollis dolor.
       </div>
-      <div className="w-full text-center text-lg">Here is a footer</div>
     </SimpleCard>
-  );
+  )
 }
