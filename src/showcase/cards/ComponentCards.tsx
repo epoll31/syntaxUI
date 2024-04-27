@@ -1,13 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import OrbitingLoader from '@/showcase/components/loaders/OrbitingLoader';
-import { TextTicker } from './PreviewCode/Text';
-import ThreeDButton from '@/showcase/components/button/ThreeDButton';
-import SimpleToggle from '@/showcase/components/toggle/SimpleToggle';
-import SimpleCard, {
-  SimpleCardExample,
-} from '@/showcase/components/cards/SimpleCard';
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import OrbitingLoader from '@/showcase/components/loaders/OrbitingLoader'
+import { TextTicker } from '@/showcase/components/text/text-ticker/TextTicker'
+import ThreeDButton from '@/showcase/components/button/ThreeDButton'
+import SimpleToggle from '@/showcase/components/toggle/SimpleToggle'
+import SimpleCard from '../components/cards/SimpleCard'
 
 const data = [
   {
@@ -64,12 +62,12 @@ const data = [
   //   image: '/images/ui/badges.png',
   //   link: '/docs/components/badges',
   // },
-  {
-    id: 9,
-    title: 'Breadcrumb',
-    image: '/images/ui/breadcrumb.png',
-    link: '/docs/components/breadcrumb',
-  },
+  // {
+  //   id: 9,
+  //   title: 'Breadcrumb',
+  //   image: '/images/ui/breadcrumb.png',
+  //   link: '/docs/components/breadcrumb',
+  // },
   {
     id: 10,
     title: 'Toggle',
@@ -86,7 +84,7 @@ const data = [
     ),
     link: '/docs/components/cards',
   },
-];
+]
 
 const ComponentCards = () => {
   return (
@@ -116,7 +114,7 @@ const ComponentCards = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ComponentCards;
+export default ComponentCards
