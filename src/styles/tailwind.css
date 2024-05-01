@@ -38,3 +38,9 @@
   inherits: false;
   initial-value: 0;
 }
+
+@property --skeuomorphism-button-r {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}

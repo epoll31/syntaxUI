@@ -3,6 +3,7 @@ import ThreeDButton from '@/showcase/components/button/3DButton'
 import HeartbeatButton from '@/showcase/components/button/HeartbeatButton'
 import NeubrutalismButton from '@/showcase/components/button/NeubrutalismButton'
 import StitchesButton from '@/showcase/components/button/StitchesButton'
+import SkeuomorphismButton from '../components/button/SkeuomorphismButton'
 
 const data = [
   {
@@ -28,6 +29,12 @@ const data = [
     title: 'Stitches Button',
     link: '/docs/components/button/stitches-button',
     component: <StitchesButton />,
+  },
+  {
+    id: 5,
+    title: 'Skeuomorphism Button',
+    link: '',
+    component: <SkeuomorphismButton />,
   },
 ]
 
