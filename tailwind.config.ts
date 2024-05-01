@@ -212,17 +212,6 @@ export default {
             '--discord-button-x': '50px',
           },
         },
-        'skeuomorphism-button': {
-          '0%': {
-            '--skeuomorphism-button-r': '80%',
-          },
-          '50%': {
-            '--skeuomorphism-button-r': '50%',
-          },
-          '100%': {
-            '--skeuomorphism-button-r': '80%',
-          },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -236,7 +225,6 @@ export default {
         'hover-vibrate': 'hover-vibrate 0.4s ease-in-out',
         'discord-button':
           'discord-button-angle 6s linear infinite, discord-button-x 6s 0.5s ease-in-out infinite',
-        'skeuomorphism-button': 'skeuomorphism-button 1s infinite',
       },
     },
   },
