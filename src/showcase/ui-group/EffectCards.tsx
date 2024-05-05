@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     title: 'Text Blur Load',
-    preview: <TextBlurLoad>Watch this text load!!</TextBlurLoad>,
+    preview: <TextBlurLoad>Syntax UI</TextBlurLoad>,
     link: '',
   },
 ]
