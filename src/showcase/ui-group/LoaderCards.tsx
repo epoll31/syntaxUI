@@ -10,6 +10,7 @@ import ClassicLoader from '@/showcase/components/loaders/ClassicLoader'
 import BounceLoader from '@/showcase/components/loaders/BounceLoader'
 import NeonGlowLoader from '@/showcase/components/loaders/NeonGlowLoader'
 import PulsatingGradientLoader from '@/showcase/components/loaders/PulsatingGradientLoader'
+import CircularProgressLoader from '../components/loaders/CircularProgressLoader'
 
 interface LoaderCardProps {
   title: string
@@ -70,6 +71,11 @@ const data: LoaderCardProps[] = [
     link: '/components/loaders/pulsating-gradient',
     component: <PulsatingGradientLoader />,
     hide: true,
+  },
+  {
+    title: 'Circular Progress',
+    link: '',
+    component: <CircularProgressLoader />,
   },
 ]
 
